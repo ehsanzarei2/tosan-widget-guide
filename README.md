@@ -68,9 +68,9 @@ FULL | 900 px | 400 px
    2. To ensure the widget is available, Netway sends a HTTP HEAD method request to the URL which you fill in the 'URL Schema'.
    3. If the Widget responses with 200 Http status code,Netway will send a HTTP GET method request with 'ssoJwt' query parameter to the URL which fill in the 'URL Schema'.  
    4. After the widget receives 'ssoJwt', it must be decoded by the widget. 
-   5. The widget needs the value of 'ssoToken' in the payload of decoded 'ssoJwt' parameter to call the login service of  WidgetStore.
-   6. After calling the login service of the Widget Store, the widget receives a json which conatins 'session_id'.
-   7. With the 'session_id' the widget can be call all banking service.
+   5. The widget needs the value of 'ssoToken' in the payload of decoded 'ssoJwt' parameter to call the login service of  Yaghut.
+   6. After calling the login service of the Yaghut, the widget receives 'sessionId'.
+   7. With the 'sessionId' the widget can be call all banking service.
    
 ### ssoJwt
 the 'ssoJwt' parameter is a JWT(JSON Web Tokens).
